@@ -152,20 +152,72 @@ var newArray = [1, 2, 3, 4, 5, 6];
 
 //MAP And SETS-----------------------------------------------------------------
 
-let map = new Map();
-map.set("name", "John Deo");
-map.set(true, 1);
-map.set(new Date(), "21 Dec 2021");
+// let map = new Map();
+// map.set("name", "John Deo");
+// map.set(true, 1);
+// map.set(new Date(), "21 Dec 2021");
 
-for (var key of map.keys()) {
-  console.log(key);
-}
-console.log("Map size :- " + map.size);
+// for (var key of map.keys()) {
+//   console.log(key);
+// }
+// console.log("Map size :- " + map.size);
 //SET does not accept repeat values
-let set = new Set();
-set.add("john");
-set.add("jenny");
-set.add("john");
-set.add("Deo");
+// let set = new Set();
+// set.add("john");
+// set.add("jenny");
+// set.add("john");
+// set.add("Deo");
 
-console.log("Set size :- " + set.size);
+// console.log("Set size :- " + set.size);
+
+//PROMISE API--------------------------------------------------------------
+
+// /producer code
+// function demoPromise() {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => resolve({ message: "Success" }));
+//   }, 2000);
+// }
+
+// //consumer code
+// function consumProm() {
+//   demoPromise()
+//     .then((respones) => {
+//       console.log("Promes ", respones);
+//     })
+//     .catch((err) => console.log(err));
+// }
+
+// function demoPromise(ms) {
+//   const promise = new Promise((resolve, reject) => {
+//     if (ms < 3000) {
+//       setTimeout(() => {
+//         resolve({ message: "success" });
+//       }, ms);
+//     } else {
+//       reject(new Error("Wiating too long......"));
+//     }
+//   });
+// }
+
+// const consumPromise = async () => {
+//   try {
+//     let result = await demoPromise(1500);
+//     console.log("result :", result);
+//   } catch (error) {
+//     console.log("Error ", error);
+//   }
+// };
+// consumPromise();
+
+//CLASS
+// class Student {
+//   constructor(firstName, lastName) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//   }
+//   sayHello() {
+//     return `Hi from ${this.firstName} ${this.lastName}`;
+//   }
+// }
+// Student.sayHello();
