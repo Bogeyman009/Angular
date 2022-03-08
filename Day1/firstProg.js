@@ -138,14 +138,34 @@ var newArray = [1, 2, 3, 4, 5, 6];
 // console.log(str);
 
 //Block Scoping--------------------------------------------------------
-const user = {
-  name: "John Deo",
-};
+// const user = {
+//   name: "John Deo",
+// };
 
-//Object.freeze will freeze the value of object
-const user1 = Object.freeze({
-  name: "John Deo",
-});
+// //Object.freeze will freeze the value of object
+// const user1 = Object.freeze({
+//   name: "John Deo",
+// });
 
-user1.name = "jenny";
-console.log(user1);
+// user1.name = "jenny";
+// console.log(user1);
+
+//MAP And SETS-----------------------------------------------------------------
+
+let map = new Map();
+map.set("name", "John Deo");
+map.set(true, 1);
+map.set(new Date(), "21 Dec 2021");
+
+for (var key of map.keys()) {
+  console.log(key);
+}
+console.log("Map size :- " + map.size);
+//SET does not accept repeat values
+let set = new Set();
+set.add("john");
+set.add("jenny");
+set.add("john");
+set.add("Deo");
+
+console.log("Set size :- " + set.size);
