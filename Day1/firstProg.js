@@ -98,3 +98,54 @@ var newArray = [1, 2, 3, 4, 5, 6];
 //   user;
 
 // console.log(e1 + "  :  " + e2 + "  :  " + e3);
+
+//Spread and Rest (...  Operartor)----------------------------------------------------------------------------------
+//Rest
+// function display(name, ...args) {
+//   console.log(args[0]);
+// }
+
+// display("Sam", 32, "london", true);
+
+// Spread
+
+// var col = [1, 2, 3, 4, 5];
+// var newcol = [10, 12, ...col, 14, 16];
+// var newcol1 = [10, 12, col, 14, 16];
+
+// console.log(newcol);
+// console.log(newcol1);
+
+// var userOne = {
+//   name: "john",
+//   isAdmin: true,
+//   dob: new Date("Dec 21,2000"),
+// };
+// var userTwo = {
+//   ...userOne,
+//   name: "jenny",
+// };
+
+// console.log(userTwo);
+
+//  Template literals-------------------------------
+// (``) backtick operator
+// var userName = "John doe";
+// var age = 32;
+// var str = `Hello from ${userName}
+// I'm noOne
+// `;
+// console.log(str);
+
+//Block Scoping--------------------------------------------------------
+const user = {
+  name: "John Deo",
+};
+
+//Object.freeze will freeze the value of object
+const user1 = Object.freeze({
+  name: "John Deo",
+});
+
+user1.name = "jenny";
+console.log(user1);
